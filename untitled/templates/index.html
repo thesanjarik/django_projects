@@ -1,0 +1,11 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+
+<h1>hello world</h1>
+<h2 style="color: {{ color }}">{{ key }}</h2>
+{% for name in list_ %}
+    <p {% if name == 'Sangar' %} style="color: brown" {% endif %} > {{ name }}</p>
+{% endfor %}
+
+{% endblock %}
